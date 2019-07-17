@@ -5,23 +5,332 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">
   <style type="text/css">
   	/* Add your CSS classes below */
+.hidden {
+  display:none;
+}
+
+.buttons {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.video {
+  height: 500px;
+  }
+
+.table {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.maintitle {
+  text-align: center;
+}
+
+.mainsub {
+  text-align: center;
+}
+
+.Kniddelen {
+  font-size: 30px;
+font-family: georgia;
+  text-align: center;
+}
+
+.video{
+  text-align:center;
+}
+ 
+.realtext {
+  color: black;
+  font-family: georgia;
+  text-align: center;
+  font-size: 20px;
+  margin: 20px;
+  padding: 0px 50px; 
+}
+
+
+.Beshbarmak {
+  font-size: 30px;
+font-family: georgia;
+  text-align: center;
+}
+
+.Caipirinha {
+  font-size: 30px;
+font-family: georgia;
+  text-align: center;
+}
+
+.Couscous {
+  font-size: 30px;
+font-family: georgia;
+  text-align: center;
+}
+
+
+.byline {
+  font-size: 12px; 
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.tablebutton {
+  padding: 10px;
+}
+
 
   </style>
 </head>
 
 <body>
   
-  <section class="section">
-      <div class="container">
-        <h1 class="title">world-food</h1>
-        <h2 class="subtitle">
-          world-food subtitle.
-        </h2>
-      </div>
-    </section>
+  <section class="hero" id="table">
+  <div class="hero-body">
+    <div class="container">
+      <h1 class="title maintitle">
+        International Cuisine
+      </h1>
+      <h2 class="subtitle mainsub">
+        Recipes from around the world
+      </h2>
 
-  <script src="js/scripts.js">
+      <div class="byline">
+      <p>By Aisha, Elisa, Lisa & Lamyae</p>
+      </div>
+      
+  <!--buttons-->
+  <div class="buttons">
+  <a href="#luxembourg"> 
+  <button 
+            class ="button showbutton"
+            onclick="showlux(); hidetable();"
+            id = "button1">
+      Luxembourg
+    </button>
+  </a>
+
+    <a href="#kazakhstan"> 
+  <button 
+            class ="button showbutton"
+            onclick="showkaz(); hidetable();"
+            id = "button1">
+      Kazakhstan
+    </button>
+  </a>
+ 
+  <a href="#brazil"> 
+  <button 
+            class ="button showbutton"
+            onclick="showbrazil(); hidetable();"
+            id = "button1">
+      Brazil
+    </button>
+  </a>
+
+  <a href="#morocco"> 
+  <button 
+            class ="button showbutton"
+            onclick="showmoroc(); hidetable();"
+            id = "button1">
+      Morocco
+    </button>
+  </a>
+      </div>
+      
+<!--table image-->
+
+<img src="https://i.imgur.com/Txkhoch.jpg" alt="table" class="table"/>
+      
+</div>
+</div>
+</section>
+
+
+<!--luxembourg-->   
+<section id="luxembourg" class="hero is-success is-fullheight hidden">
+  <div class="hero-body">
+    <div class="container">
+        
+<h1 class="Kniddelen"> <em> Kniddelen </em> </h1>
+
+<figure class="video">
+<iframe width="560" height="500" 
+        src="https://www.youtube.com/embed/S0KaS-WrtJI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> </figure>
+
+<div class="realtext">
+ <p> Kniddelen are little dumplings that look similar to the Swiss spaetzle, cooked in a creamy sauce with bacon bits. You can add apple puree on the side. </p>
+  <a href="#table"> 
+  <button 
+            class ="button showbutton"
+            onclick="hidelux(); showtable();">
+      Back to Table
+    </button>
+  </a>
+
+</div>
+</section>
+    
+<!--Kazakhstan-->
+    
+<section id ="kazakhstan" class="hero is-primary is-fullheight bg hidden">
+  <div class="hero-body">
+    <div class="container">
+      
+      <h1 class="Beshbarmak"> <em> Beshbarmak </em> </h1>
+
+<figure class="video">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/rhRmr1ZqJhc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> </figure>
+
+<div class="realtext">
+ <p> Beshbarmak is also known as Naryn, Turama or Kullama. Beshbarmak actually means "five fingers", because nomads used to eat this dish with their hands. The boiled meat is finely chopped with knives, mixed with boiled noodles, and spiced with onion sauce. It is usually served in a big round dish. </p>
+ <a href="#table"> 
+  <button 
+            class ="button showbutton"
+            onclick="hidekaz(); showtable();">
+      Back to Table
+    </button>
+  </a>
+
+</div>
+      
+      
+    </div>
+  </div>
+</section>
+    
+    
+ <!-- Brazil-->
+<section id="brazil" class="hero is-warning hidden">
+  <div class="hero-body">
+    <div class="container">
+     
+      
+      <h1 class="Caipirinha"> <em> Caipirinha </em> </h1>
+
+<figure class="video">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/SdG2oBCRigc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> </figure>
+
+<div class="realtext">
+ <p> Nothing screams Brazilianness more than a good Caipirinha. The country’s national cocktail is made with lime, sugar, crushed ice and Cachaça (a typical alcohol) and usually contains 30-50% of alcohol. </p>
+ <a href="#table"> 
+  <button 
+            class ="button showbutton"
+            onclick="hidebrazil(); showtable();">
+      Back to Table
+    </button>
+  </a>
+</div>
+      
+    </div>
+  </div>
+    </section>
+    
+<!--Morocco-->    
+    
+<section id="morocco" class="hero is-info hidden">
+  <div class="hero-body">
+    <div class="container">
+      
+      <h1 class="Couscous"> <em> Moroccan Couscous </em> </h1>
+
+<figure class="video">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/LSzZTcwCRzo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> </figure>
+
+<div class="realtext">
+ <p> Couscous is originally a Berber dish and for this reason couscous is a staple dish in many North African countries. In Morocco, there are different types and versions of couscous but the most traditional one is called the “7 vegetables couscous”. It is composed of semolina grains (granules of durum wheat), topped with vegetables and meat cooked in a super tasty and comforting broth. </p>
+
+  <a href="#table"> 
+  <button 
+            class ="button showbutton "
+            onclick="hidemor(); showtable();">
+      Back to Table
+    </button>
+
+</div>
+      
+    </div>
+  </div>
+</section>
+
+
+
+  <script>
   	/* Add your Javascript below */
+    function showlux() {
+document
+  .getElementById("luxembourg")
+  .style
+  .display = "block"
+
+}
+
+function showkaz() {
+  document
+    .getElementById("kazakhstan")
+    .style
+    .display = "block"
+}
+
+function showbrazil() {
+  document
+    .getElementById("brazil")
+    .style
+    .display = "block"
+}
+
+function showmoroc() {
+  document
+    .getElementById("morocco")
+    .style
+    .display = "block"
+}
+
+function hidelux() {
+  document
+  .getElementById("luxembourg")
+  .style
+  .display = "none"
+}
+
+function hidekaz() {
+  document
+  .getElementById("kazakhstan")
+  .style
+  .display = "none"
+}
+
+function hidebrazil() {
+  document
+  .getElementById("brazil")
+  .style
+  .display = "none"
+}
+
+function hidemor() {
+  document
+  .getElementById("morocco")
+  .style
+  .display = "none"
+}
+
+
+function hidetable() {
+  document
+  .getElementById("table")
+  .style
+  .display = "none"
+}
+
+function showtable() {
+  document
+  .getElementById("table")
+  .style
+  .display = "block"
+}
   </script>
 </body>
 </html>
